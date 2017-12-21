@@ -6,12 +6,6 @@ phases:
       - git clone https://github.com/mammut89/agaru.no.git
       - echo "cloned agaru.no"
   post_build:
-    commands:
+     commands:
       - aws s3 cp . s3://www.agaru.no --recursive --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers	  
       - echo "copied to s3"
-
-	  
-	  
-	  
-	  
-	  
