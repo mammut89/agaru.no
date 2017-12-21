@@ -1,0 +1,16 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - git clone https://github.com/mammut89/agaru.no.git
+      - echo "cloned agaru.no"
+  post_build:
+    commands:
+	  - aws s3 cp . s3://www.agaru.no --recursive --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers	  
+	  
+	  
+	  
+	  
+	  
+	  
