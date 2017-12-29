@@ -1,3 +1,3 @@
 # agaru.no
 
-Www.agaru.no
+www.agaru.no
